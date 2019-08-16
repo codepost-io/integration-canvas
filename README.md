@@ -18,9 +18,9 @@ Technical aside:
 
 > Without the Admin API Key, the script won't be able to query the /users/:user_id endpoint which will map Canvas UserIDs to emails.
 
-### 1. Get the CourseID and the AssignmentID
+### 1. Get the COURSE_ID and the ASSIGNMENT_ID
 
-Log into Canvas and navigate to the assignment page. In the URL you will see the CourseID first and the AssignmentID second. Copy these.
+Log into Canvas and navigate to the assignment page. In the URL you will see the COURSE_ID first and the Assignment_ID second. Copy these.
 
 > Example: https://canvas.instructure.com/courses/1668XXX/assignments/12044XXX
 
@@ -28,13 +28,13 @@ Log into Canvas and navigate to the assignment page. In the URL you will see the
 
 Clone this repository or copy the python script `canvas-to-codepost.py` to your local machine.
 
-Replace <API_KEY>, <COURSE_ID>, and <ASSIGNMENT_ID> with the appropriate values.
+Replace `<YOUR CANVAS ADMIN API KEY HERE>` with your API KEY.
 
 ### 3. Run the script
 
 Make sure that you have Python installed and run
 
-`python3 canvas-to-codepost`
+`python3 canvas-to-codepost <COURSE_ID> <ASSIGNMENT_ID>`
 
 You should now see a folder called `codepost_upload` with the student directories and submissions. Any problem files will be in the `errors` folder.
 

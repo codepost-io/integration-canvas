@@ -11,13 +11,21 @@ import json
 import os
 import shutil
 import re
+import argparse
+
+# =============================================================================
+
+parser = argparse.ArgumentParser(description='Canvas to codePost!')
+parser.add_argument('course_id', help='Course ID')
+parser.add_argument('assignment_id', help='Assignment ID')
+args = parser.parse_args()
 
 # =============================================================================
 
 # Constants
-CANVAS_API_KEY = "<YOUR_CANVAS_ADMIN_API_KEY_HERE>"
-COURSE_ID = '<COURSE_ID>'
-ASSIGNMENT_ID = '<ASSIGNMENT_ID>'
+CANVAS_API_KEY = "<YOUR CANVAS ADMIN API KEY HERE>"
+COURSE_ID = str(args.course_id)
+ASSIGNMENT_ID = str(args.assignment_id)
 
 BASE_URL = 'https://canvas.instructure.com/api/v1'
 HEADERS = {'Authorization': "Bearer " + CANVAS_API_KEY}
@@ -34,13 +42,15 @@ _tmp_dir = os.path.join(_cwd, 'tmp')
 
 
 def assignment_submissions_endpoint(course_id, assignment_id):
-    return "{}/courses/{}/assignments/{}/submissions?include[]=group".format(BASE_URL, course_id, assignment_id)
+return
+"{}/courses/{}/assignments/{}/submissions?include[]=group".format(BASE_URL,
+                                                                  course_id, assignment_id)
 
 
 def users_endpoint(user_id):
     return "{}/users/{}?include[]=email".format(BASE_URL, user_id)
 
-# =============================================================================
+# ======================================================================
 
 
 def delete_directory(path):
@@ -94,7 +104,7 @@ def check_for_partners(submission):
     else:
         return []
 
-# =============================================================================
+# ======================================================================
 
 url = assignment_submissions_endpoint(COURSE_ID, ASSIGNMENT_ID)
 
