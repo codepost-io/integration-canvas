@@ -1,0 +1,32 @@
+Autograder Summary
+
+Compilation:  PASSED
+API:    PASSED
+Checkstyle: PASSED
+
+Correctness:  1/3 tests passed
+
+*********************************************************
+*  TESTING CORRECTNESS
+*********************************************************
+
+Test 1: call max() on a simple array
+* function: max
+* input = [1,2,3]
+* expected: 3
+* output: 3
+PASSED
+
+Test 2: call max() on an array with negative numbers
+* function: max
+* input = [-1, -2]
+* expected: -1
+* output: 0
+ERROR
+
+Test 3: call max() on an empty array
+* function: max
+* input = []
+* expected: null
+* output: null
+PASSED
