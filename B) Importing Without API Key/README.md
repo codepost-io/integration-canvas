@@ -25,7 +25,7 @@ liskov,barbara,liskov@school.edu
 cooper,sheldon,cooper@school.edu
 ```
 
-## 1. Setting up the script
+## 2. Setting up the script
 
 Clone this repository or copy the python script `canvas_to_codepost_manual.py` to your local machine.
 
