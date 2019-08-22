@@ -10,8 +10,8 @@ A typical lead instructor will usually do something like the following every wee
 
 ## Import submissions into codePost from Canvas
 
-- If you have a Canvas Admin API key, go [here]().
-- If not, go [here]().
+- If you have a Canvas Admin API key, go [here](https://github.com/codepost-io/integration-canvas/tree/master/A)%20Importing%20With%20API%20Key).
+- If not, go [here](https://github.com/codepost-io/integration-canvas/tree/master/B)%20Importing%20Without%20API%20Key).
 
 > To get a Canvas API Key, either ask your school’s Canvas Admin or login to Canvas and go to `Account -> Settings -> New Access Token`
 
