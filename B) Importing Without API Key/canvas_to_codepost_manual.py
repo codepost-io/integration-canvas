@@ -1,10 +1,10 @@
 # =============================================================================
 # codePost – Download from Canvas Utility
 #
-# Downloads submissions from Canvas and transform the file structure into
-# a structure that codePost will recognize.
+# Takes submissions downloaded from Canvas and transforms the file structure 
+# into a structure that codePost will recognize.
 #
-# Use this script if you don't have a Canvas Admin API Key
+# Use this script if you don't have a Canvas API Key
 # =============================================================================
 
 # Python stdlib imports
